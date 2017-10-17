@@ -86,7 +86,7 @@ class Moss:
 
     def uploadFile(self, s, file, id):
         size = os.path.getsize(file)
-        filename_fixed = os.path.basename(file).replace(" ", "_")
+        filename_fixed = file.replace(" ", "_")
         message = "file {0} {1} {2} {3}\n".format(
             id,
             self.options['l'],
